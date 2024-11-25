@@ -1,0 +1,16 @@
+{
+    "name": "Flask Codespace",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": ["ms-python.python"]
+        }
+    },
+    "forwardPorts": [8080],
+    "postCreateCommand": "pip install -r requirements.txt"
+}
